@@ -1,4 +1,4 @@
-Feature: Inventory validation tests
+.Feature: Add item with missing information
 
   Background:
     * url 'http://localhost:3100'

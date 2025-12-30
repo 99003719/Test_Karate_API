@@ -6,7 +6,8 @@ class TestRunner {
     
     @Karate.Test
     Karate testUsers() {
-        return Karate.run("Validate_item_present_in_inventory").relativeTo(getClass());
+        return Karate.run("Validate_item_present_in_inventory" +
+                "").relativeTo(getClass());
     }
 
 }

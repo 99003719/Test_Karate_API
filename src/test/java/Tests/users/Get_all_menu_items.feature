@@ -1,4 +1,4 @@
-Feature: Inventory API
+Feature: Get all menu items feature
 
   Background:
     Given url 'http://localhost:3100/api'
