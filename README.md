@@ -43,7 +43,7 @@ Test_API_KARATE/
 
 Run from IDE
 
-1.Open the project in IntelliJ, Eclipse, or VS Code.
+1.Clone the project from remote repository to local folder and open the project in IntelliJ, Eclipse, or VS Code.
 
 2.In TesrRunner class provide the path of the feature file which need to be executed
 
