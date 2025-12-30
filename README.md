@@ -31,12 +31,13 @@ Test_API_KARATE/
         └── java
             └── Tests
                       └──users
-                              ├── Add_item.feature
+                              ├── Add_item_existing_id.feature
+                              ├── Add_item_non_existing_id.feature
+                              ├── Add_item_with_missing_info.feature
                               ├── Filter_by_id.feature
-                              ├── Inventory.feature
-                              ├── TestRunner.java
-                              ├── Validate.feature
-                              └── Validate_item_present_in_inventory.feature 
+                              └── Get_all_menu_items.feature
+                              └── TestRunner.java
+                              └──Validate_recent_added_item_is_present.feature 
 
                               
 ## Build and run tests
