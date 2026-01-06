@@ -21,3 +21,4 @@ Feature: Get all menu items feature
         image: '#present'
       }
       """
+
