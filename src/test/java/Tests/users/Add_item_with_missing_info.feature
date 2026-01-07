@@ -1,19 +1,12 @@
 Feature: Add item with missing information
 
   Background:
-    * url 'http://localhost:3100'
+    * def incompletepayload = read('classpath:Tests/users/incomplete_payload.json')
 
   Scenario: Try to add item with missing information
-    * def incompleteItem =
-      """
-      {
-        "name": "Harry",
-        "image": "incomplete.png",
-        "price": "$20"
-      }
-      """
-    Given path 'api', 'inventory', 'add'
-    And request incompleteItem
+    Given url baseUrl
+    And path 'api', 'inventory', 'add'
+    And request incompletepayload
     When method post
     * assert responseStatus == 400
     * match response contains 'Not all requirements are met'
