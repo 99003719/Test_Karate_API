@@ -43,8 +43,10 @@ Test_API_KARATE/
                                
 ## Folder Explanation
 
-karate-config.js – Global configuration (base URL, environment settings)
+karate-config.js – Global configuration (base URL, environment settings) 
+
 TestRunner.java – JUnit runner to execute feature files
+
 .feature files – Gherkin scenarios describing API behavior
                               
 ## Build and run tests
