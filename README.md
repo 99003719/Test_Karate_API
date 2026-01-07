@@ -72,10 +72,15 @@ Open this file in a browser to view execution results.
 ## Test Scenarios Covered
 
 1.Get all menu items – Validate at least 9 items with fields id, name, price, image.
+
 2.Filter by id – GET /inventory/filter?id=3 and validate correct item data.
+
 3.Add item for non-existent id – POST new item and expect status 200.
+
 4.Add item for existing id – POST duplicate item and expect status 400.
+
 5.Add item with missing information – POST incomplete JSON and expect status 400 with message "Not all requirements are met".
+
 6.Validate recent added item is present – GET /inventory and verify the added item exists.
 
 
