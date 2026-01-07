@@ -1,4 +1,4 @@
-.Feature: Add item with missing information
+Feature: Add item with missing information
 
   Background:
     * url 'http://localhost:3100'
