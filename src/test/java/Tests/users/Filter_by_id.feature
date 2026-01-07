@@ -5,7 +5,7 @@ Feature: Filter inventory by id
 
   Scenario: Get inventory item by id and validate response
     Given url baseUrl
-    When path 'api', 'inventory', 'filter'
+    And path 'api', 'inventory', 'filter'
     And param id = 3
     When method get
     Then status 200
