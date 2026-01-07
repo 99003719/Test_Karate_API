@@ -65,8 +65,8 @@ Run using Maven
 2. mvn test -Dkarate.options="classpath:Tests/users" (Run tests from a specific folder)
    
 ## Test Reports
-After execution, Karate generates HTML reports automatically in below path:
-target/karate-reports/karate-summary.html
+After execution, Karate generates HTML reports automatically in the path:
+"target/karate-reports/karate-summary.html"
 Open this file in a browser to view execution results.
 
 ## Test Scenarios Covered
