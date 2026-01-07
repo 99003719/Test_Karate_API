@@ -50,9 +50,13 @@ TestRunner.java – JUnit runner to execute feature files
 ## Build and run tests
 
 Run using Test Runner (JUnit)
+
 1.Clone the project from remote repository to local folder and open the project in IntelliJ, Eclipse, or VS Code.
+
 2.Open TestRunner.java
+
 3.Right-click → Run TestRunner
+
 This will execute all feature files defined in the runner.
 
 Run using Maven
