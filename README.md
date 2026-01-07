@@ -23,6 +23,7 @@ The base URL for tests is:
 http://localhost:3100/api
 
 ## Project Structure
+
 Test_API_KARATE/
 ├── pom.xml
 ├── README.md
@@ -43,21 +44,15 @@ Test_API_KARATE/
 ## Folder Explanation
 
 karate-config.js – Global configuration (base URL, environment settings)
-
 TestRunner.java – JUnit runner to execute feature files
-
 .feature files – Gherkin scenarios describing API behavior
                               
 ## Build and run tests
 
 Run using Test Runner (JUnit)
-
 1.Clone the project from remote repository to local folder and open the project in IntelliJ, Eclipse, or VS Code.
-
 2.Open TestRunner.java
-
 3.Right-click → Run TestRunner
-
 This will execute all feature files defined in the runner.
 
 Run using Maven
@@ -65,21 +60,18 @@ Run using Maven
 2. mvn test -Dkarate.options="classpath:Tests/users" (Run tests from a specific folder)
    
 ## Test Reports
+
 After execution, Karate generates HTML reports automatically in the path:
 "target/karate-reports/karate-summary.html"
 Open this file in a browser to view execution results.
 
 ## Test Scenarios Covered
+
 1.Get all menu items – Validate at least 9 items with fields id, name, price, image.
-
 2.Filter by id – GET /inventory/filter?id=3 and validate correct item data.
-
 3.Add item for non-existent id – POST new item and expect status 200.
-
 4.Add item for existing id – POST duplicate item and expect status 400.
-
 5.Add item with missing information – POST incomplete JSON and expect status 400 with message "Not all requirements are met".
-
 6.Validate recent added item is present – GET /inventory and verify the added item exists.
 
 
