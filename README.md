@@ -6,7 +6,7 @@ This project contains API tests for the **Inventory API** using the **Karate (BD
 Before running the tests, ensure you have the following installed:
 1.Java JDK 11+
 2.Docker
-3.Git (for cloning/pushing the project)  
+3.Git (to clone/push the project)  
 
 ## Setup API
 
@@ -23,44 +23,54 @@ The base URL for tests is:
 http://localhost:3100/api
 
 ## Project Structure
+
 Test_API_KARATE/
 ├── pom.xml
 ├── README.md
+├── karate-config.js
 └── src
     └── test
         └── java
             └── Tests
                       └──users
                               ├── Add_item_existing_id.feature
-                              ├── Add_item_non_existing_id.feature
+                              ├── Add_item_non_existing_id_and_validate_the_added_item
                               ├── Add_item_with_missing_info.feature
                               ├── Filter_by_id.feature
                               └── Get_all_menu_items.feature
                               └── TestRunner.java
-                              └──Validate_recent_added_item_is_present.feature 
+                              
+                               
+## Folder Explanation
 
+karate-config.js – Global configuration (base URL, environment settings)
+TestRunner.java – JUnit runner to execute feature files
+.feature files – Gherkin scenarios describing API behavior
                               
 ## Build and run tests
 
-Run from IDE
+Run using Test Runner (JUnit)
 
 1.Clone the project from remote repository to local folder and open the project in IntelliJ, Eclipse, or VS Code.
 
-2.In TesrRunner class provide the path of the feature file which need to be executed
+2.Open TestRunner.java
 
-3.Right-click TestRunner.java → Run as JUnit Test.
+3.Right-click → Run TestRunner
 
-4.Results will appear in the IDE console.
+This will execute all feature files defined in the runner.
 
+Run using Maven
+1. mvn test (Run all feature files)
+2. mvn test -Dkarate.options="classpath:Tests/users" (Run tests from a specific folder)
+   
+## Test Reports
 
-## Verify Test Results
-All scenarios should pass if the API is running correctly.
-You can check:
-target/karate-reports
-for detailed HTML or XML reports.
-
+After execution, Karate generates HTML reports automatically in the path:
+"target/karate-reports/karate-summary.html"
+Open this file in a browser to view execution results.
 
 ## Test Scenarios Covered
+
 1.Get all menu items – Validate at least 9 items with fields id, name, price, image.
 
 2.Filter by id – GET /inventory/filter?id=3 and validate correct item data.
