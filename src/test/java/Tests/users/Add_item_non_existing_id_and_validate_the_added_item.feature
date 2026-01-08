@@ -1,7 +1,7 @@
 Feature: Add item for non existent id
 
   Background:
-    * def requestBody = read('classpath:Tests/users/add_item_payload.json')
+    * def requestBody = read('classpath:Tests/data/add_item_payload.json')
     * def dynamicId = java.lang.System.currentTimeMillis().toString()
     * set requestBody.id = dynamicId
 

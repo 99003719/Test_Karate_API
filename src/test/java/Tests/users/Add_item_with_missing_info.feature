@@ -1,7 +1,7 @@
 Feature: Add item with missing information
 
   Background:
-    * def incompletepayload = read('classpath:Tests/users/incomplete_payload.json')
+    * def incompletepayload = read('classpath:Tests/data/incomplete_payload.json')
 
   Scenario: Try to add item with missing information
     Given url baseUrl

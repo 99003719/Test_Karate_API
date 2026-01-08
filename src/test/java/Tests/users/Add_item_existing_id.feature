@@ -2,7 +2,7 @@ Feature: Add item for existent id
 
   Background:
 
-    * def requestBody = read('classpath:Tests/users/add_item_payload.json')
+    * def requestBody = read('classpath:Tests/data/add_item_payload.json')
 
   Scenario: Add inventory item
 

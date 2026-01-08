@@ -1,7 +1,7 @@
 Feature: Filter inventory by id
 
   Background:
-    * def expectedresponse = read('classpath:Tests/users/expected_response.json')
+    * def expectedresponse = read('classpath:Tests/data/expected_response.json')
 
   Scenario: Get inventory item by id and validate response
     Given url baseUrl
