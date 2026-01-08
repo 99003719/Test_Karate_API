@@ -62,7 +62,7 @@ Run using Test Runner (JUnit)
 This will execute all feature files defined in the runner.
 
 Run using Maven
-1. mvn test (Run all feature files)
+1. mvn test (Run the feature files)
 2. mvn test -Dkarate.options="classpath:Tests/users" (Run tests from a specific folder)
    
 ## Test Reports
