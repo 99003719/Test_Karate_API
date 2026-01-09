@@ -24,29 +24,30 @@ http://localhost:3100/api
 
 ## Project Structure
 
+```
 Test_API_KARATE/
-├── pom.xml                    
-├── src/test/java/
-│   └── Tests/
-│       ├── data/              
-│       │  └── add_existing_item_payload.json
-│       │  └── add_item_payload.json
-│       │  └── expected_response.json
-│       │  └──incomplete_payload.json
-│       ├── users/         
-│       │   ├── Add_item_existing_id.feature
-│       │   └──Add_item_non_existing_id.feature
-│       │   └── Add_item_with_missing_info.feature
-│       │   └── Filter_by_id.feature
-│       │   └── Get_all_menu_items.feature
-│       │   └── TestRunner
-│       │   └── Validate_recent_added_item_is_present_in_the_inventory.feature
-│       │   
-│       ├──karate-config.js
-│      
-│
-└── target
+├── pom.xml
+├── src
+│   └── test
+│       └── java
+│           └── Tests
+│               ├── data
+│               │   ├── add_existing_item_payload.json
+│               │   ├── add_item_payload.json
+│               │   ├── expected_response.json
+│               │   └── incomplete_payload.json
+│               ├── users
+│               │   ├── Add_item_existing_id.feature
+│               │   ├── Add_item_non_existing_id.feature
+│               │   ├── Add_item_with_missing_info.feature
+│               │   ├── Filter_by_id.feature
+│               │   ├── Get_all_menu_items.feature
+│               │   ├── Validate_recent_added_item_is_present_in_the_inventory.feature
+│               │   └── TestRunner
+│               └── karate-config.js
+├── target
 └── README.md
+```
                               
                                
 ## Folder Explanation
