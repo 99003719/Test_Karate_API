@@ -6,7 +6,7 @@ class TestRunner {
     
     @Karate.Test
     Karate testUsers() {
-        return Karate.run("Filter_by_id" +
+        return Karate.run("Add_item_non_existing_id_and_validate_the_added_item" +
                 "").relativeTo(getClass());
     }
 
