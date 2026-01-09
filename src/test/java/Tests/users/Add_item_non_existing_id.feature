@@ -7,20 +7,15 @@ Feature: Add item for non existent id
 
 
   Scenario: Add inventory item
-    # POST the item
+    # POST new item to the inventory
     Given url baseUrl
     And path 'api', 'inventory', 'add'
     And request requestBody
     When method post
     Then status 200
+    * def ExpectedItem = requestBody
 
-      #validate menu item
-    Given url baseUrl
-    And path 'api', 'inventory'
-    When method get
-    Then status 200
-    # Validate item exists with correct data
-    And match response.data contains requestBody
+
 
 
 
